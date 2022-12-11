@@ -4,7 +4,7 @@
 
 ## Title 2
 
-** Definition **
+**Definition**
 
 [Text here]
 
