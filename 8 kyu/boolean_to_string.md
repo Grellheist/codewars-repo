@@ -4,7 +4,7 @@ Implement a function which convert the given boolean value into its string repre
 
 Note: Only valid inputs will be given.
 
-``
+```python
 def boolean_to_string(b):
     return str(b)
-``
+```
