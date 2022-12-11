@@ -24,6 +24,8 @@ snail(array) #=> [1,2,3,4,5,6,7,8,9]
 ```
 This image will illustrate things more clearly:
 
+![snail](https://user-images.githubusercontent.com/20653258/206886323-887b7c00-0d86-42e8-919e-c8ebd4d6951d.png)
+
 NOTE: The idea is not sort the elements from the lowest value to the highest; the idea is to traverse the 2-d array in a clockwise snailshell pattern.
 
 NOTE 2: The 0x0 (empty matrix) is represented as en empty array inside an array [[]].
