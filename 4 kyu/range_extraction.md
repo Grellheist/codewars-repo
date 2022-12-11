@@ -21,8 +21,21 @@ Courtesy of rosettacode.org
 ### Solution:
 
 ```python
-def solution(args):
+def solution(list):
     result = []
-    return result
+    buffer = []
+    for number in sorted(list) + [None]:
+        if not buffer:
+            buffer.append(number)  # If the buffer list is empty, adds the element to it
+        else:
+            if number == buffer[-1]+1:  # If the buffer list is not empty, and if the next number to the number is a successor, adds to the list
+                buffer.append(number)
+            else:
+                if len(buffer) > 2:  # If the size of the buffer is more than 3, does the reduction
+                    result.append(f'{buffer[0]}-{buffer[-1]}')
+                else:
+                    result.extend(str(x) for x in buffer)  # Otherwise, just adds the number normally
+                buffer = [number]
+    return ','.join(result)
 ```
 
